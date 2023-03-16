@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            color: blue;
+            font-size: 50px;
+        }
+
+        button {
+            border-radius: 10px;
+            border-style: none;
+            height: 50px;
+        }
+
+        button:hover{
+            cursor: pointer;
+            opacity: 0.8;
+            transition: ease-in-out 0.5s;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 15px;
+        }
+        .form {
+            background-color: white;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 1px 1px 5px 1px;
+            float: right;
+            text-align: center;
+            padding: 20px;
+            margin-right: 120px;
+           margin: auto;
+        }
+
+        .create {
+            float: right;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 10px;
+            height: 40px;
+            border-color: 1px lightgrey;
+        }
+
+       .aside{
+            float: left;
+            padding-left: 150px;
+            padding-top: 170px;
+       }
+
+       .aside p{
+        font-size: larger;
+        font-weight: bold;
+       }
+
+        #login{
+            background-color: blue;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 100%;
+        }
+
+        #createaccount{
+            background-color: green;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 80%;
+        }
+
+        section {
+            display: grid;
+            align-content: center;
+            padding-right: 150px;
+            padding-left: 100px;
+            padding-top: 100px;
+            width: max-content;
+        }
+      
+        @media screen and(max-width: 400px){
+
+
+
+            section {
+                float: none;
+                width: 60%;
+            }
+
+        }
+            
+
+    </style>
+
+</head>
+<body>
+    <div class="aside">
+        <h1>facebook</h1>
+        <p>Connect with Friends and the world <br>around you on Facebook.</p>
+    </div>
+<section>
+   <div class="form">
+        <form onsubmit="alert('Welcome to Facebook')">
+            <input type="email, tel" placeholder="Email or Phone Number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+            <input type="password" placeholder="Password" required><br/><br/>
+            <button value="submit" id="login">Log In</button>
+        </form>
+        <a href="#">Forgot Account?</a>
+        <hr />
+        <button href="#" id="createaccount">Create New Account</button>
+    </div>
+    <div class="create">
+        <p><b>Create a Page</b> for a celebrity, brand or business.</p>
+        <p>Made by Lil-dino</p>
+    </div>
+</section>
+
+</body>
+</html>
